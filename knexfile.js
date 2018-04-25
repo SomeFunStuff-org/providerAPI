@@ -1,4 +1,4 @@
-// Update with your config settings.
+require.('dotenv').load();
 
 module.exports = {
 
@@ -7,7 +7,7 @@ module.exports = {
     connection: {
         database: 'postgress://localhost/providers',
         user: 'providerAPI',
-        password: 'opendb'  },
+        password: process.env.DEV_DB_PSWD  },
 
   production: {
     client: 'pg',
