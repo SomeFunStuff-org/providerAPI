@@ -5,11 +5,11 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('providers').insert([
-        {id: 1, name: 'lawncare', tier: 1 },
-        {id: 2, name: 'window cleaning', tier: 1},
-        {id: 3, name: 'toilet scubbing', tier: 1},
-        {id: 4, name: 'plumbing', tier: 2},
-        {id: 5, name: 'lawyer', tier: 5}
+        { providerID: 1, name: 'lawncare', tier: 1 },
+        { providerID: 2, name: 'window cleaning', tier: 1 },
+        { providerID: 3, name: 'toilet scubbing', tier: 1 },
+        { providerID: 4, name: 'plumbing', tier: 2 },
+        { providerID: 5, name: 'lawyer', tier: 5 }
       ]);
     });
 };
