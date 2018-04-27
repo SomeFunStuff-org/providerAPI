@@ -1,14 +1,11 @@
 require('dotenv').load();
 
+
 module.exports = {
 
   development: {
     client: 'pg',
-    connection: {
-        database: 'postgress://localhost/providers',
-        user: 'providerAPI',
-        password: process.env.DEV_DB_PSWD  
-    }
+    connection: 'postgres://localhost/providers'
   },
 
   production: {

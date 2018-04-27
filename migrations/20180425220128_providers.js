@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
         table.increments('providerID');
         table.string('name');
         table.integer('tier');
-    }
+    });
 };
 
 exports.down = function(knex, Promise) {
