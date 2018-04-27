@@ -4,9 +4,10 @@ exports.up = function(knex, Promise) {
         table.increments('providerID');
         table.string('name');
         table.integer('tier');
+        table.string('links');
     });
 };
 
 exports.down = function(knex, Promise) {
-    return knex.schema.dropTable('Archers');
+    return knex.schema.dropTable('providers');
 };
