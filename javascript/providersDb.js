@@ -1,13 +1,8 @@
+var knex = require('../js/knex');
 
 
-function getAllProviders() {
-}
-
-function updateProvider(){
-}
-
-function getProvider() {
-}
-
-function deleteProvider(providerID){
+module.exports = {
+    getProviders: function(){
+        return knex('providers');
+    }
 }

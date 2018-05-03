@@ -1,4 +1,5 @@
 var express = require('express');
+var knex = require('knexfile.js');
 var router = express.Router();
 
 /* GET providers listing. */
