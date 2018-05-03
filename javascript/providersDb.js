@@ -1,8 +1,7 @@
-var knex = require('../js/knex');
-
+var knex = require('../config/knex');
 
 module.exports = {
     getProviders: function(){
-        return knex('providers');
+       return knex('providers');
     }
 }
