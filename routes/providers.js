@@ -11,8 +11,8 @@ router.get('/getProviders', function(req, res, next) {
     });
 });
 
-router.get('/getProvider', function(req, res, next) {
-    db.getProvider(id)
+router.get('/getProvider/:id', function(req, res, next) {
+    db.getProvider(req.params.id)
     .then(function(provider) {
         res.send(provider);
     });
